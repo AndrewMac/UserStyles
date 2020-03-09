@@ -1,0 +1,589 @@
+/* UTS COLORS */
+:root {
+    --color-uts-blue: #3250eb;
+    --color-uts-blue-medium: #99a9f6;
+    --color-uts-blue-light: #ccd4fa;
+    --color-uts-blue-ultralight: #e5e9fc
+    --color-uts-red: #d62a00;
+    --color-uts-grey: #727272;
+    --color-uts-black: #000000;
+    --default-color-primary: #000;
+    --default-color-secondary: #727272;
+}
+
+/* UTS STYLEGUIDE COLORS */
+:root {
+	--color-white: #fff;
+	--color-rich-black: #000;
+	--color-black: #323232;
+	--color-blue: var(--color-uts-blue);
+	--color-rich-blue: #0d41d1;
+	--color-red: var(--color-uts-red);
+	--color-dark-grey: #767676;
+	--color-gun-metal-grey: #707070;
+	--color-darker-grey: #595959;
+	--color-grey: #b2b2b2;
+	--color-light-grey: #ebebeb;
+	--color-medium-grey: #7a7a7a;
+	--color-mid-light-grey: #ccc;
+	--color-extra-light-grey: #ddd;
+	--color-super-light-grey: #f5f4f5;
+	--color-ultra-light-grey: #f1f1f1;
+	--color-green: #32cd32;
+	--color-orange: #f09d38;
+}
+
+/* THEME */
+:root
+{
+	--primary: var(--color-uts-blue);
+    --primary-medium: var(--color-uts-blue-medium);
+    --primary-light: var(--color-uts-blue-light);
+	--secondary: #6c757d;
+	--success: #28a745;
+	--info: #17a2b8;
+	--warning: #ffc107;
+	--danger: #dc3545;
+	--light: #f8f9fa;
+	--dark: #343a40;
+    --link: var(--primary);
+    --link-hover: var(--primary-medium);
+    --link-bg: var(--primary);
+    --link-hover-bg: var(--primary-medium);
+    --sidebar-bg: white;
+    --sidebar-active: var(--color-uts-blue-light);
+}
+
+/* BREAKPOINTS */
+:root {
+	--breakpoint-xs: 0;
+	--breakpoint-sm: 576px;
+	--breakpoint-md: 768px;
+	--breakpoint-lg: 992px;
+	--breakpoint-xl: 1200px;
+}
+
+/* SPACING */
+:root {
+    --padding-default: 2rem;
+    --default-padding: 2rem;
+    --default-sidebar-width: 300px;
+}
+
+/* FONTS */
+:root {
+    --font-family-uts-text: "Open Sans",NB-International-Regular;
+    --font-family-uts-headings: NB-Akademie-Bold;
+	--font-family-sans-serif: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+	--font-family-sans-serif: NB-International-Regular;
+	--font-family-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+}
+
+
+
+/* FONTS */
+/* ---------------------------------------- */
+
+@font-face {
+  font-family: NB-Akademie-Regular;
+  src: url('https://rmdev.uts.edu.au/RME/fonts/nb_akademie_std_regular-webfont.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+@font-face {
+  font-family: NB-Akademie-Bold;
+  src: url('https://rmdev.uts.edu.au/RME/fonts/nb_akademie_std_bold-webfont.woff2') format('woff2'); /* Super Modern Browsers */
+}
+
+@font-face {
+    font-family: NB-International-Regular;
+    src: url('https://rmdev.uts.edu.au/RME/fonts/nb_international_pro_regular-webfont.woff2');
+}
+
+/* LINKS */
+
+a, a:link, a:visited {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+a, a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* GENERIC TAGS */
+/* ---------------------------------------- */
+
+h1,
+h1 font {
+    font-family: "NB-Akademie-Regular" !important;
+}
+
+body {
+    font-family: "Open Sans" !important;
+}
+
+rmui-widget .widget-container .widget-header {
+    background-color: var(--default-color-primary);
+}
+
+.dx-header-row {
+    background-color: var(--default-color-secondary);
+}
+
+rmui-dashboard .dashboard-container {
+    padding: var(--default-padding);
+}
+
+rmui-widget-zone rmui-widget {
+    margin-bottom: var(--default-padding);
+}
+
+rmui-widget {
+    width: 100% !important;
+    min-width: 100% !important;
+}
+
+eforms-eform {
+    display: grid;
+}
+
+rmui-content-sidebar {
+    width: var(--default-sidebar-width) !important;
+    max-width: var(--default-sidebar-width) !important;
+}
+
+
+
+/* LAYOUT */
+/* ---------------------------------------- */
+/*
+.main-wrapper {
+    display: flex !important;
+    flex-direction:row;
+}
+
+.main-wrapper content-wrapper {
+    width: 100%;
+}
+
+.content-wrapper {
+    flex: auto;
+    margin-left: 0 !important;
+}
+
+.content {
+    padding: 0 !important;
+}
+
+.content .content-body {
+    margin: 0 !important;
+}
+
+eforms-home {
+    margin: 0.5rem !important;
+}
+
+*/
+
+
+
+/* FIXED SECTIONS */
+/* ---------------------------------------- */
+
+.fixed-sections {
+    z-index: 100 !important;
+}
+
+.fixed-sections rmui-app-toolbar,
+.fixed-sections .rmui-menu-toggle {
+    z-index: 1000 !important;
+}
+
+.fixed-sections rmui-main-menu {
+    z-index: 10;
+}
+
+
+.shellMenuExpanded .fixed-sections rmui-content-template-1 rmui-content-title,
+.shellMenuExpanded .fixed-sections rmui-content-template-1 > .rmui-toolbar {
+    left: 272px;
+}
+
+
+/* COMPONENTS */
+/* ---------------------------------------- */
+
+.commentsGeneral {
+    color: var(--color-uts-red);
+    opacity: 0.6;
+}
+
+
+
+/* BANNER */
+/* ---------------------------------------- */
+
+rmui-banner {
+    background-color: var(--color-white);
+    padding-left: 168px;
+    background-image: url('/RME/Images/uts-logo.svg');
+    background-repeat: no-repeat;
+    background-position: 39px;
+    line-height: 2.3;
+}
+
+rmui-banner font {
+    font-family: NB-Akademie-Regular;
+    font-weight: normal;
+}
+
+
+/* CONTENT */
+/* ---------------------------------------- */
+
+.content-wrapper,
+.content-body {
+    padding-left: var(--padding-default);
+    padding-right: var(--padding-default);
+}
+
+.content-wrapper .toolbar {
+    margin-left: calc(-1 * var(--padding-default));
+    margin-right: calc(-1 * var(--padding-default));
+    padding-left: var(--padding-default);
+    padding-right: var(--padding-default);
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-body,
+.search-body,
+.search-content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.content {
+    padding-bottom: 0;
+}
+
+
+
+/* FOOTER */
+/* ---------------------------------------- */
+
+rmui-main-footer {
+    padding: 1rem 0;
+    margin-top: 3rem;
+}
+
+
+
+/* TOOLBARS */
+/* ---------------------------------------- */
+
+.content-wrapper .toolbar {
+    height: 48px;
+    border: none;
+}
+
+rmui-app-toolbar,
+rmui-app-toolbar .rmui-menu-toggle {
+    background-color: var(--color-darker-grey);
+    border-top: 1px solid var(--color-darker-grey);
+    border-bottom: 1px solid var(--color-darker-grey);
+    color: white;
+    z-index: 100;
+}
+
+.rmui-menu-toggle {
+    z-index: 500;
+}
+
+rmui-app-toolbar .rmui-app-title {
+    width: 202px;
+    background-color: var(--color-darker-grey);
+}
+
+rmui-app-toolbar a:link,
+rmui-app-toolbar a:visited {
+    color: white;
+}
+
+
+
+/*  BREADCRUMBS */
+/* ---------------------------------------- */
+
+rmui-breadcrumb .rm-breadcrumb li a {
+    background-color: var(--color-uts-blue);
+    text-decoration: none;
+}
+
+rmui-breadcrumb .rm-breadcrumb li a:hover {
+    background-color: var(--color-uts-blue) !important;
+    color: white;
+    text-decoration: underline;
+}
+
+rmui-breadcrumb .rm-breadcrumb li a::before {
+    border-left: none;
+}
+
+rmui-breadcrumb .rm-breadcrumb li a::after,
+rmui-breadcrumb .rm-breadcrumb li a:hover::after {
+    border-left-color: var(--color-uts-blue) !important;
+}
+
+
+
+/* NAV */
+/* ---------------------------------------- */
+
+rmui-tabset .nav-tabs {
+    height: 48px;
+}
+
+rmui-tabset .nav-tabs .nav-link,
+.nav-tabs .nav-link {
+    background-color: var(--primary-light);
+    color: black;
+}
+
+rmui-tabset .nav-tabs .nav-link:hover,
+.nav-tabs .nav-link:hover {
+    background-color: var(--primary-medium);
+}
+
+rmui-tabset .nav-tabs .nav-link.active,
+.nav-tabs .nav-link.active,
+rmui-tabset .nav-tabs .nav-link.active:hover,
+.nav-tabs .nav-link.active:hover {
+    background-color: var(--link-bg);
+    border-color: var(--color-uts-blue);
+    color: white;
+}
+
+.nav-tabs {
+    align-items: flex-end;
+}
+
+
+/* MENUS */
+/* ---------------------------------------- */
+
+rmui-main-menu {
+    background-color: var(--sidebar-bg);
+	border-right: 1px solid var(--sidebar-active);
+    height: auto !important;
+    flex-shrink: 0;
+    flex-basis: 48px;
+    overflow-y: scroll;
+}
+
+rmui-main-menu.expanded {
+    flex-basis: 250px;
+}
+
+rmui-main-menu .rmui-main-menu {
+    /* position: relative; */
+}
+
+rmui-main-menu rmui-menu-group:first-child .menuHeader {
+	border: none;
+}
+
+rmui-menu-group.expanded li {
+	background-color: white;
+}
+
+rmui-menu-group.expanded ul {
+	border: none;
+	border-top: none;
+	border-left: none;
+	border-bottom: 3px solid var(--sidebar-active);
+}
+
+rmui-menu-group.expanded .menuHeader {
+    background-color: var(--sidebar-active);
+}
+
+rmui-menu-group.expanded .menuIcon {
+    background-color: var(--sidebar-active);
+}
+
+rmui-menu-group .menuHeader {
+	border: none;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+rmui-menu-group .menuHeader span {
+    font-weight: unset;
+    font-family: NB-Akademie-Regular;
+}
+
+rmui-menu-group.expanded .menuHeader span {
+	font-family: NB-Akademie-Bold;
+}
+
+rmui-menu-group .menuHeader,
+rmui-menu-group .menuItemGroup {
+    background-color: transparent;
+    width: 100%;
+	border: none;
+	border-top: none;
+	border-bottom: none;
+	border-left: none;
+	border-right: none;
+}
+
+rmui-menu-group .menuItem:nth-child(2n) {
+   background-color: transparent;
+}
+
+rmui-main-menu rmui-menu-group:first-child .menuHeader {
+    border-top: none;
+}
+
+
+
+/* TABS */
+/* ---------------------------------------- */
+
+.nav-tabs {
+    height: 48px;
+    border-bottom: 1px solid var(--link-bg);
+}
+
+rmui-tabset .nav-tabs {
+    height: 48px;
+}
+
+.nav-tabs .nav-link,
+rmui-tabset .nav-tabs .nav-link {
+    padding: 4px 8px;
+    border: none;
+    margin-right: 3px;
+}
+
+.nav-tabs .nav-link.active,
+rmui-tabset .nav-tabs .nav-link.active {
+    padding: 8px 8px 4px;
+    border: none;
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: 0;
+}
+
+.content .tab-content {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-top: calc(var(--padding-default) / 2);
+}
+
+
+
+/* BUTTONS */
+/* ---------------------------------------- */
+
+rmui-app-toolbar button.btn-link,
+rmui-app-toolbar button.btn a,
+rmui-app-toolbar button.btn a:hover,
+rmui-app-toolbar button.btn-link a,
+rmui-app-toolbar button.btn-link a:hover {
+    color: white !important;
+    background-color: var(--color-uts-blue);
+    border: 1px solid rgba(255,255,255,0.25);
+}
+
+rmui-app-toolbar .rmui-site-login a,
+rmui-app-toolbar .rmui-site-login a:hover {
+    color: black !important;
+	background-image: url('/RME/Images/icons/glyphicons-halflings-1-user.svg');
+	background-repeat: no-repeat;
+    background-color: white;
+    border: 1px solid var(--color-uts-blue);
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    padding: .375rem .75rem;
+	padding-left: 2.75rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+	margin-right: 0.5rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.toolbar-btn {
+    margin-left: -12px;
+}
+
+.toolbar-btn:hover:not([disabled]) {
+    background-color: transparent !important;
+    color: var(--link) !important;
+}
+
+
+
+/* TABLES */
+/* ---------------------------------------- */
+
+td[class*="title"] {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.dx-datagrid .dx-row-lines > td,
+.dx-datagrid .dx-column-lines > td {
+    border: none;
+}
+
+.dx-datagrid-headers,
+.dx-datagrid-content,
+.dx-datagrid-rowsview {
+    border: none;
+}
+
+
+
+/* DATA GRID */
+/* ---------------------------------------- */
+
+.dx-widget {
+	font-family: var(--font-family-text);
+}
+
+
+
+/* WIDGETS */
+
+rmui-widget .widget-container {
+	border: none;
+	box-shadow: none;
+}
+
+
+/* LISTS */
+/* ---------------------------------------- */
+
+ol.checkbox-list li {
+	margin-left: 1.4em;
+	text-indent: -1.4em;
+}

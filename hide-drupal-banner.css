@@ -1,0 +1,21 @@
+.banner.banner--research {
+	visibility: hidden;
+    height: auto;
+}
+
+.banner__image {
+	padding-top: 0;
+}
+
+.banner__overlay {
+	position: relative;
+}
+
+.banner__title-overlay {
+	max-width: 100%;
+}
+
+.banner .page-title h1 {
+	color: black;
+    visibility: visible;
+}
