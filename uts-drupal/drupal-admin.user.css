@@ -25,7 +25,9 @@
 		z-index: -1;
 	}
 	
-	.test { color: blue }
+	.view-filters form div {
+		display: grid; 
+	}
 
 }
 
