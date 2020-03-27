@@ -1,0 +1,241 @@
+/* ==UserStyle==
+@name           Drupal Microsites
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Proposed styles for Drupal microsites
+@author         Andrew Macpherson
+==/UserStyle== */
+
+@-moz-document domain("www.uts.edu.au"), domain("staging.uts.edu.au"), domain("dev.uts.edu.au") {
+	
+	/* section dividers, cf https://www.cdu.edu.au/locations/darwin-waterfront */
+	
+	.mask,
+	.mask--left,
+	.mask--right
+	{
+		position: relative;
+		overflow: hidden;
+		padding-top: 8vw;
+		padding-bottom: 8vw;
+	}
+
+	@media (min-width:600px)
+	{
+		.mask,
+			 .mask--left,
+			 .mask--right
+		{
+			padding-top: 7vw;
+			padding-bottom: 7vw;
+		}
+	}
+
+	@media (min-width:1200px)
+	{
+		.mask,
+			 .mask--left,
+			 .mask--right
+		{
+			padding-top: 7vw;
+			padding-bottom: 7vw;
+		}
+	}
+
+	@media (min-width:1600px)
+	{
+		.mask,
+		 .mask--left,
+		 .mask--right
+		{
+			padding-top: 6vw;
+			padding-bottom: 6vw;
+		}
+	}
+
+	@media (min-width:2000px)
+	{
+		.mask,
+		 .mask--left,
+		 .mask--right
+		{
+			padding-top: 5vw;
+			padding-bottom: 5vw;
+		}
+	}
+
+	.mask--left::after,
+	.mask--left::before,
+	.mask--right::after,
+	.mask--right::before,
+	.mask::after,
+	.mask::before
+	{
+		content: '';
+		display: block;
+		height: 0;
+		width: 0;
+		position: absolute;
+		z-index: 1;
+	}
+
+	.mask--left::before,
+	.mask--right::before,
+	.mask::before
+	{
+		top: 0;
+		left: 0;
+	}
+
+	.mask--left::after,
+	.mask--right::after,
+	.mask::after
+	{
+		bottom: 0;
+		left: 0;
+	}
+
+	.mask--left>div:not(.background__image),
+	.mask--right>div:not(.background__image),
+	.mask>div:not(.background__image)
+	{
+		z-index: 2;
+		position: relative;
+	}
+
+	.mask--left::after,
+	.mask--left::before { border-right: 100vw solid transparent; }
+
+	.mask--left::before
+	{
+		border-top: 4.5vw solid #fff;
+		height: 0;
+		background: inherit;
+	}
+
+	.mask--left::after
+	{
+		border-bottom: 4.15vw solid #fff;
+		height: 0;
+		background: inherit;
+	}
+
+	.mask--right::after,
+	.mask--right::before { border-left: 100vw solid transparent; }
+
+	.mask--right::before
+	{
+		border-top: 4.15vw solid #fff;
+		height: 0;
+		background: inherit;
+	}
+
+	.mask--right::after
+	{
+		border-bottom: 4.15vw solid #fff;
+		height: 0;
+		background: inherit;
+	}
+
+	.mask--bottom { padding-top: 2.5rem; }
+	.mask--bottom::before { display: none; }
+	.mask--top { padding-bottom: 2.5rem; }
+	.mask--top::after { display: none; }
+
+	.mask--half
+	{
+		background-color: transparent;
+		color: inherit;
+	}
+
+	.mask--half .key-facts__item-title:not(.button),
+	.mask--half a:not(.button),
+	.mask--half h1:not(.button),
+	.mask--half h2:not(.button),
+	.mask--half h3:not(.button),
+	.mask--half h4:not(.button),
+	.mask--half h5:not(.button),
+	.mask--half h6:not(.button),
+	.mask--half p:not(.button) { color: inherit; }
+	.mask--half a:not(.button):visited { color: inherit; }
+	.mask--half .link-list a { color: inherit; }
+	.mask--half h2.related-content__title { color: inherit; }
+	.mask--half .section-header__content { color: inherit; }
+	.mask--half .section-header__content p { color: inherit; }
+	.mask--half .section-header__description,
+	.mask--half .section-header__section-name,
+	.mask--half .section-header__title { color: inherit; }
+	.mask--half blockquote::before { color: inherit; }
+	.mask--half .call-to-action { color: #fff; }
+	.mask--half.mask--bottom { padding-bottom: calc(2rem + 4.15vw); }
+
+	.mask--half.mask--bottom::before
+	{
+		width: 100%;
+		top: auto;
+		display: block;
+		bottom: calc(258px + 4.15vw);
+		background: 0 0;
+		border-left: 100vw solid transparent;
+		border-top: 4.15vw solid transparent;
+		border-bottom: 4.15vw solid currentColor;
+		position: absolute;
+		height: 0;
+	}
+
+	.mask--half.mask--bottom::after
+	{
+		background-color: transparent;
+		height: 259px;
+		width: 0;
+		top: auto;
+		bottom: 0;
+		display: block;
+		border-right: 100vw solid currentColor;
+	}
+
+	.mask--half.mask--top::before
+	{
+		background-color: currentColor;
+		height: 259px;
+		width: 0;
+		top: 0;
+		bottom: 0;
+		display: block;
+		border-right: 100vw solid currentColor;
+		border-left: 0;
+	}
+
+	.mask--half.mask--top::after
+	{
+		width: 0;
+		top: 259px;
+		display: block;
+		background: 0 0;
+		border-right: 100vw solid currentColor;
+		border-left: 0;
+		position: absolute;
+		height: 0;
+	}
+
+	.mask--transparent
+	{
+		overflow: visible;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+	}
+
+	.mask--transparent.no-padding { padding: 0; }
+
+	.mask--transparent::before
+	{
+		content: '';
+		height: 0;
+		border-top: 0;
+		border-bottom: 4.15vw solid currentColor;
+		-webkit-transform: translateY(-99.5%);
+		transform: translateY(-99.5%);
+		background: 0 0;
+	}
+
+}
