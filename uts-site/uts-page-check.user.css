@@ -52,50 +52,14 @@
 		background-color: green;
 	}
 
+	/* CHECK GENERAL TAGS */
+	
+	
+	
 	/* CHECK EMPTY TAGS */
 
 	:empty {
 		background-color: yellow;
 	}
-
-	/* TAGS */
-
-	br {
-		content: '\a';
-		display: block;
-		width: 0;
-		background-color: transparent !important;
-		color: black;
-		height: 1em;
-		line-height: inherit;
-		margin-top: -1em;
-		overflow: visible;
-	}
-
-	br::after {
-		content: "<br>";
-		display: inline-block;
-		position: relative;
-		font-size: 1rem;
-		font-weight: normal;
-		width: 3rem;
-		left: -4em;
-		top: 1em;
-		padding: 0 3px;
-		border: 1px solid hsl(0,0%,90%);
-		background-color: hsl(0,0%,100%);
-		color: hsl(0,0%,75%);
-		text-align: center;
-		text-transform: none;
-	}
-
-	/* INTERESTING
-
-	textarea.text-full {
-		visibility: visible;
-		display: block;
-	}
-
-	*/
 
 }
