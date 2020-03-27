@@ -1,0 +1,5 @@
+#content thead {
+	position: sticky;
+	top: 0;
+	background: white;
+}

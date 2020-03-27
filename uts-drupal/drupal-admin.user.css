@@ -1,33 +1,71 @@
-/* ==UserStyle==
-@name           UTS Drupal Admin
-@namespace      github.com/openstyles/stylus
-@version        1.0.0
-@description    Customises the Drupal admin interface
-@author         Andrew Macpherson
-==/UserStyle== */
-
-@-moz-document	domain("www.uts.edu.au"),
-				domain("staging.uts.edu.au"),
-				domain("dev.uts.edu.au") 
-{
-	
-	.paragraph-type-title,
-	.paragraph-type-top {
-		color: white;
-		background-color: black;
-		padding: 0.5em;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
-
-	#block-uts-theme-tabs {
-		margin: auto;
-		z-index: -1;
-	}
-	
-	.view-filters form div {
-		display: grid; 
-	}
-
+main.page-content {
+    padding-right: 40px; /* leave room for SiteImprove widget */
 }
+
+.paragraph-type-title,
+.paragraph-type-top {
+    color: white;
+    background-color: black;
+    padding: 0.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#block-uts-theme-tabs {
+	margin: auto;
+	z-index: -1;
+}
+
+
+
+.view-filters form > div {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+.view-filters form > .form-item-status {
+	font: inherit;
+}
+
+
+.view-filters form > .form-item-type {
+	font: inherit;
+}
+
+
+.view-filters form > .form-item-title {
+	font: inherit;
+}
+
+
+.view-filters form > #edit-created-wrapper {
+	font: inherit;
+}
+
+
+.view-filters form > #edit-changed-wrapper {
+	font: inherit;
+}
+
+
+.view-filters form > .form-item-uid {
+	font: inherit;
+}
+
+
+.view-filters form > .form-item-uid-revision {
+	font: inherit;
+}
+
+
+.view-filters form > .form-item-uid-1 {
+	font: inherit;
+}
+
+
+.view-filters form > #edit-actions {
+	column-span: all;
+}
+
 
