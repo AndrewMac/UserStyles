@@ -8,10 +8,12 @@
 
 @-moz-document domain("www.uts.edu.au"), domain("staging.uts.edu.au"), domain("dev.uts.edu.au") {
 
+	/* leave room for SiteImprove widget */
 	main.page-content {
-		padding-right: 40px; /* leave room for SiteImprove widget */
+		padding-right: 40px;
 	}
 
+	/* highlight components for easy scanning */
 	.paragraph-type-title,
 	.paragraph-type-top {
 		color: white;
@@ -21,10 +23,18 @@
 		text-transform: uppercase;
 	}
 
+	/* can't remember what I put this one in for */
 	#block-uts-theme-tabs {
 		margin: auto;
 		z-index: -1;
 	}
+	
+	/* set wyswiwyg to desktop content width */
+	iframe.cke_wysiwyg_frame {
+		width: 825px !important;
+	}
+
+
 
 }
 
