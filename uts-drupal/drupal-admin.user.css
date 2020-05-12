@@ -34,7 +34,10 @@
 		width: 825px !important;
 	}
 
-
+	/* set wyswiwyg height */
+	#cke_1_contents {
+		height: 50vh !important;
+	}
 
 }
 
