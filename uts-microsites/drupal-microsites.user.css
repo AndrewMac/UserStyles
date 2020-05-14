@@ -1,5 +1,5 @@
 /* ==UserStyle==
-@name           Drupal Microsites
+@name           UTS Drupal Microsites
 @namespace      github.com/openstyles/stylus
 @version        1.0.0
 @description    Proposed styles for Drupal microsites
@@ -7,9 +7,9 @@
 ==/UserStyle== */
 
 @-moz-document domain("www.uts.edu.au"), domain("staging.uts.edu.au"), domain("dev.uts.edu.au") {
-	
+
 	/* section dividers, cf https://www.cdu.edu.au/locations/darwin-waterfront */
-	
+
 	.mask,
 	.mask--left,
 	.mask--right
