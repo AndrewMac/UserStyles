@@ -43,6 +43,45 @@ domain("dev.uts.edu.au") {
 
 }
 
+@-moz-document domain("www.uts.edu.au") {
+
+	.toolbar-lining {
+		background-color: lightgreen;
+	}
+
+	.menu-item,
+	.toolbar button.toolbar-icon {
+		background-color: #f5f5f2;
+	}
+
+}
+
+@-moz-document domain("staging.uts.edu.au") {
+
+	.toolbar-lining {
+		background-color: orange;
+	}
+
+	.menu-item,
+	.toolbar button.toolbar-icon {
+		background-color: #f5f5f2;
+	}
+
+}
+
+@-moz-document domain("dev.uts.edu.au") {
+
+	.toolbar-lining {
+		background-color: red;
+	}
+
+	.menu-item,
+	.toolbar button.toolbar-icon {
+		background-color: #f5f5f2;
+	}
+
+}
+
 @-moz-document url("https://www.uts.edu.au/admin/content") {
 
 	.form--inline {
@@ -78,7 +117,7 @@ domain("dev.uts.edu.au") {
 
 	.form-item-type {
 		grid-row: 2;
-		grid-column: 3/5;
+		grid-column: 1/3;
 	}
 
 	#edit-type {
@@ -87,7 +126,7 @@ domain("dev.uts.edu.au") {
 
 	.form-item-status {
 		grid-row: 2;
-		grid-column: 1/3;
+		grid-column: 3/5;
 	}
 
 	#edit-status {
@@ -133,45 +172,6 @@ domain("dev.uts.edu.au") {
 
 	#edit-actions {
 		grid-row: 6;
-	}
-
-}
-
-@-moz-document domain("www.uts.edu.au") {
-
-	.toolbar-lining {
-		background-color: lightgreen;
-	}
-
-	.menu-item,
-	.toolbar button.toolbar-icon {
-		background-color: #f5f5f2;
-	}
-
-}
-
-@-moz-document domain("staging.uts.edu.au") {
-
-	.toolbar-lining {
-		background-color: orange;
-	}
-
-	.menu-item,
-	.toolbar button.toolbar-icon {
-		background-color: #f5f5f2;
-	}
-
-}
-
-@-moz-document domain("dev.uts.edu.au") {
-
-	.toolbar-lining {
-		background-color: red;
-	}
-
-	.menu-item,
-	.toolbar button.toolbar-icon {
-		background-color: #f5f5f2;
 	}
 
 }
